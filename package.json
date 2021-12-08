@@ -1,0 +1,46 @@
+{
+  "name": "vscode",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development"
+  },
+  "author": "Lidia Shananina",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.3.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^12.1.0",
+    "scss-loader": "0.0.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "D": "^1.0.0",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "postcss-cli": "^9.0.2"
+  },
+  "main": "postcss.config.js",
+  "description": ""
+}

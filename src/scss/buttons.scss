@@ -1,0 +1,60 @@
+@import "./prop-mix.scss";
+.btn-secondary {
+  padding: 8px 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: $secondary;
+  border-radius: 8px;
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #10b981;
+  }
+}
+.btn-text-primary {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: $primary-btn;
+  background-color: transparent;
+  transition: 0.3s;
+  &:hover {
+    background-color: $btn-primary-8;
+  }
+  svg {
+    margin-right: 11px;
+  }
+}
+.btn-primary {
+  padding: 8px 20px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 8px;
+  color: white;
+  background: $primary-btn;
+  &:hover {
+    background: $primary-btn-hover;
+  }
+}
+.btn-arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  svg {
+    fill: $primary;
+  }
+  &_not-active {
+    svg {
+      fill: $neutral-400;
+    }
+  }
+}

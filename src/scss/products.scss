@@ -1,0 +1,93 @@
+@import "./prop-mix.scss";
+.content {
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 104px;
+  }
+  &__pagination-list {
+    display: flex;
+    margin: 0;
+  }
+  &__pagination-item {
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+    padding: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    &_active {
+      background-color: $primary-btn;
+      color: white;
+    }
+  }
+}
+.header {
+  &_space {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search {
+    position: relative;
+    width: 500px;
+    margin-left: 24px;
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    border: none;
+  }
+  &__search-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.product-card {
+  background-color: white;
+  flex: 1 1 30%;
+  margin: 0 32px 24px 0;
+  @include card-style;
+  &__body {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e6e8f0;
+    color: $primary;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 16px;
+    color: $text-secondary;
+  }
+  &__stat {
+    display: flex;
+  }
+  &__stat-icon {
+    margin-right: 8px;
+  }
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
